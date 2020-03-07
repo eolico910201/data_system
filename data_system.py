@@ -1,9 +1,6 @@
 
 # coding: utf-8
 
-# In[88]:
-
-
 def measure(strg):
     num = 0
     for i in strg:
@@ -52,18 +49,12 @@ def transfer(a):
         x["right"] = transfer(a.son["right"])
     return x
 
-
-# In[89]:
-
+#Testing
 
 a = node("1","一一一")
 b = node("1","二二二")
 x = merge(a,b)
 print(transfer(x))
-
-
-# In[90]:
-
 
 x.push_in("0","嘿嘿嘿")
 print(transfer(x))
